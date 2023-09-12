@@ -1,0 +1,31 @@
+def greet_customer():
+  print("Nice to meet you! Welcome to our store. What can I get for you ?")
+greet_customer()
+order = input(" (Coffee , Cookies , Ice_Cream ): ")
+money = int(input(" How much money do you have?"))
+coffee = 3
+cookies = 2
+ice_cream = 1
+if order == "coffee":
+    if money >= coffee:
+        print("Your change is", money - coffee)
+        print("Thank you for order come again ❤️.")
+    else:
+        print("You don't have enough money to buy this item.")
+
+elif order == "cookies":
+    if money >= cookies:
+        print("Your change is", money - cookies)
+        print("Thank you for order come again ❤️.")
+    else:
+        print("You don't have enough money to buy this item.")
+
+elif order == "ice_cream":
+    if money >= ice_cream:
+        print("Your change is", money - ice_cream)
+        print("Thank you for order come again ❤️.")
+    else:
+        print("You don't have enough money to buy this item.")
+else:
+    print("Invalid order")
+
